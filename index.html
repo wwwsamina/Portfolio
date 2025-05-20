@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samina's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #af657b 0%, #440313 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #440313;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-details {
+            padding: 20px;
+        }
+
+        .project-details h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            color: #af657b;
+        }
+
+        .project-details p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #af657b, #440313);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 107, 139, 0.4);
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #e76b8b;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Samina's Portfolio</h1>
+        <p>Explore my collection of interactive Web Development projects</p>
+    </div>
+
+    <div class="projects-container">
+        <div class="project-card">
+            <div class="project-image" style="background-image: url('img28.jpg')"></div>
+            <div class="project-details">
+                <h2>Sam's Floristry Gallery</h2>
+                <p>A 3D gallery showcasing my handcrafted bouquets, with rotation and zoom features.</p>
+                <a href="https://wwwsamina.github.io/BouquetGallery/" class="project-link">View Gallery</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image" style="background-image: url('quiz.jpg')"></div>
+            <div class="project-details">
+                <h2>Islamic Quiz Challenge</h2>
+                <p>Test your knowledge of Islam with this fun and interactive quiz challenge.</p>
+                <a href="https://wwwsamina.github.io/IslamicQuizes/" class="project-link">Play Quiz</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image" style="background-image: url('age.jpg')"></div>
+            <div class="project-details">
+                <h2>Age <br>Calculator</h2>
+                <p>A simple yet powerful tool to calculate your exact age in years, months, and days.</p>
+                <a href="https://wwwsamina.github.io/AgeCalculator/" class="project-link">Try Tool</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Created by <a href="https://www.linkedin.com/in/samxna/">Samina Ahmed</a></p>
+    </div>
+</body>
+</html>
